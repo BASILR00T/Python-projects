@@ -1,4 +1,4 @@
-#Random_Choice
+# Random Choice
 
 A simple Python script that randomly selects one person from a list and marks them with `"ASK ===>"`.
 
@@ -12,14 +12,14 @@ A simple Python script that randomly selects one person from a list and marks th
 2. The script will display the list of names, with one randomly selected name marked with `"ASK ===>"`.
 
 ## Example
-AHMED
-BASIL
-ASK ===> ZIYAD
-ABDULLAH
-ABDULRAHMAN
-ALEX
-MAX
 
+AHMED  
+BASIL  
+ASK ===> ZIYAD  
+ABDULLAH  
+ABDULRAHMAN  
+ALEX  
+MAX
 
 ## Notes
 - The list of names is hardcoded in the script. You can modify the list to include your own names.
