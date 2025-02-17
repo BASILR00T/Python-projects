@@ -12,7 +12,6 @@ A simple Python script that randomly selects one person from a list and marks th
 2. The script will display the list of names, with one randomly selected name marked with `"ASK ===>"`.
 
 ## Example
-
 AHMED
 BASIL
 ASK ===> ZIYAD
