@@ -1,7 +1,7 @@
 import random
 
-def Ask_game():
-    x = ["AHMED", "BASIL", "ZIYAD", "ABDULLAH", "ABDULRAHMAN", "ALEX", "MAX"]
+def Random_Choice():
+    x = ["YOUNG", "BASIL", "ZIYAD", "BILLIE", "JANE", "ALEX", "MAX"]
     person_selected = False  # Flag to track if a person has been selected
 
     # Randomly select one person to mark with "ASK ===>"
@@ -15,4 +15,4 @@ def Ask_game():
             print(person)
 
 # Run the function
-Ask_game()
+Random_Choice()
