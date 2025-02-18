@@ -4,43 +4,47 @@ A simple command-line Rock-Paper-Scissors game where you play against the comput
 
 ## Features
 - Play Rock-Paper-Scissors against the computer  
-- Choose the number of rounds you want to play  
-- Track wins, losses, and ties over selected rounds  
-- Option to quit early by typing `"quit"`  
-- Option to play again after the game ends  
+- Customize the number of rounds  
+- Track wins/losses/ties  
+- Quit early with `"quit"`  
+- Play again option  
 
 ## How to Use
-1. Run the script `Game.py`  
-2. Enter the number of rounds you want to play  
-3. Enter your choice (`rock`, `paper`, or `scissor`) when prompted  
-   - Type `"quit"` to exit early and see your results  
-4. The computer will randomly select its choice  
-5. The result (win, lose, or tie) will be displayed  
-6. After selected rounds, game displays your total results  
-7. Choose to play again or exit  
+1. Run `Game.py`  
+2. Enter desired number of rounds  
+3. Choose: `rock`/`paper`/`scissor`  
+4. See results instantly  
+5. Continue until rounds end or type `"quit"`  
+6. View final stats and replay  
 
 ## Example  
+```plaintext
+Enter how many rounds you want to play: 3  
+Enter your choice (rock, paper, scissor): rock  
+PC's choice is: scissor, Your choice is: rock  
+------------------------------  
+YOU Win! 🎉  
 
-Enter how many rounds you want to play: 2
-Enter your choice (rock, paper, scissor) or type 'quit' to exit: rock
-PC's choice is: scissor, Your choice is: rock
-YOU Win! 🎉
+Enter your choice (rock, paper, scissor): paper  
+PC's choice is: paper, Your choice is: paper  
+------------------------------  
+It's a tie! 🤝  
 
-Enter your choice (rock, paper, scissor) or type 'quit' to exit: paper
-PC's choice is: rock, Your choice is: paper
-YOU Lose! 😢
+Enter your choice (rock, paper, scissor): scissor  
+PC's choice is: rock, Your choice is: scissor  
+------------------------------  
+YOU Lose! 😢  
 
-Game over! Your result:
-Wins: 1
-Ties: 0
-Losses: 1
-What we call this Tie? 🤔
-Do you want to play again? (yes/no): no
-Thanks for playing! Goodbye!..♥
+Game over! Your result:  
+Wins: 1  Ties: 1  Losses: 1  
+Do you want to play again? (yes/no): no  
+Thanks for playing! Goodbye!..♥  
 
+## Notes
+Emoji reactions: 🎉/😢/🤝/🤔
 
-## Notes  
-- Uses emojis (`🎉`, `😢`, `🤝`, `🤔`) for visual feedback  
-- Customize round count at start or when replaying  
-- Type `"quit"` to exit early with current results  
-- Game resets after each session  
+Case-insensitive inputs
+
+Stats reset when replaying
+
+Results file saved automatically
