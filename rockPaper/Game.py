@@ -4,7 +4,7 @@ def game_logic():
     choices = ["rock", "paper", "scissor"]
     rounds = 0
     wins = 0
-    loses = 0
+    losses = 0  # Renamed for grammatical correctness
     ties = 0
 
     # Get the number of rounds from the player
@@ -25,14 +25,14 @@ def game_logic():
         # Check if the player wants to quit early
         if player_choice == "quit":
             print("You chose to quit early. Here are your results:")
-            print(f"wins: {wins}\n ties: {ties}\n loses: {loses}")
+            print(f"wins: {wins}\n ties: {ties}\n losses: {losses}")
             # Determine overall result
-            if wins > loses and wins > ties:
+            if wins > losses and wins > ties:
                 print("We Have a Winner! 🎉")
-            elif ties >= wins and ties >= loses or wins == loses:
-                print("What we call this Tie? 🤔")
+            elif ties >= wins and ties >= losses or wins == losses:
+                print("What we call this Tie? 🤔")  # Handles ties and equal wins/losses
             else:
-                print("You've Lost 😢")
+                print("You've Lost! 😢")  # Added exclamation mark for consistency
 
             print("\nThanks for playing! Goodbye!..♥")
             break
@@ -57,19 +57,19 @@ def game_logic():
             print(30 * "-", "\nYOU Win! 🎉\n")
         else:
             rounds += 1
-            loses += 1
+            losses += 1
             print(30 * "-", "\nYOU Lose! 😢\n")
 
         # Check if the selected number of rounds is completed
         if rounds == total_rounds:
-            print(f"Game over! Your result:\n wins: {wins}\n ties: {ties}\n loses: {loses}")
+            print(f"Game over! Your result:\n wins: {wins}\n ties: {ties}\n losses: {losses}")
             # Determine overall result
-            if wins > loses and wins > ties:
+            if wins > losses and wins > ties:
                 print("We Have a Winner! 🎉")
-            elif ties >= wins and ties >= loses or wins == loses:
-                print("What we call this Tie? 🤔")
+            elif ties >= wins and ties >= losses or wins == losses:
+                print("What we call this Tie? 🤔")  # Handles ties and equal wins/losses
             else:
-                print("You've Lost 😢")
+                print("You've Lost! 😢")  # Added exclamation mark for consistency
 
             # Ask if the player wants to play again
             while True:
@@ -82,7 +82,7 @@ def game_logic():
                 # Reset counters for a new game
                 rounds = 0
                 wins = 0
-                loses = 0
+                losses = 0
                 ties = 0
 
                 # Get the number of rounds for the new game
