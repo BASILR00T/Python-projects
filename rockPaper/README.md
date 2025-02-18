@@ -1,53 +1,61 @@
 # Rock-Paper-Scissors Game
 
-A simple Python script to play Rock-Paper-Scissors against the computer with customizable rounds.
+A Python command-line game to play Rock-Paper-Scissors against the computer with customizable rounds.
 
 ## Features
-- Play Rock-Paper-Scissors against the computer
-- Choose custom number of rounds
-- Track wins, losses, and ties
-- Quit mid-game with `"quit"`
-- Play again without restarting
+- 🎮 Best-of-N rounds (choose any number)
+- 📊 Real-time win/loss/tie tracking
+- 🚪 Mid-game exit with `quit`
+- 🔄 Play again without restarting
+- 😄 Emoji feedback system (🎉/🤝/😢)
 
 ## How to Use
-1. Run the script `Game.py`
-2. Enter your desired number of rounds
-3. Play by entering `rock`/`paper`/`scissor`
-4. Results update after each round
-5. Type `quit` to exit early
-6. View final stats and replay option
+1. Run the script:
+   ```bash
+   python Game.py
 
-## Example
-```plaintext
-Enter how many rounds you want: 3  
-Enter choice (rock/paper/scissor): rock  
-PC chose: scissor | You chose: rock  
-------------------------------  
-YOU Win! 🎉  
-
-Enter choice (rock/paper/scissor): paper  
-PC chose: paper | You chose: paper  
-------------------------------  
-It's a tie! 🤝  
-
-Enter choice (rock/paper/scissor): scissor  
-PC chose: rock | You chose: scissor  
-------------------------------  
-YOU Lose! 😢  
-
-Game Over:  
-Wins: 1 | Ties: 1 | Losses: 1  
-Play again? (yes/no): no  
-Goodbye!..♥  
-```
-
-## Notes
+##  Full Example
 
 
-🔴 Emojis: 🎉 = Win | 😢 = Loss | 🤝 = Tie
+Enter how many rounds you want: 2
 
-🔴 Case-insensitive inputs (ROCK = rock)
 
-🔴 Edit Game.py to customize messages
+Enter your choice (rock, paper, scissor) or type 'quit' to exit: rock
 
-🔴 Stats reset automatically for new games
+
+PC chose: scissor | You chose: rock
+
+YOU Win! 🎉
+
+Enter your choice (rock, paper, scissor) or type 'quit' to exit: quit
+
+
+You chose to exit early!
+
+
+Final results:
+Wins: 1 | Ties: 0 | Losses: 0
+
+
+Play again? (yes/no): no
+
+Goodbye!..♥
+
+
+## Customization
+✏️ Edit choices = ["rock", "paper", "scissor"] to add/remove options
+
+🎨 Modify emojis in print statements
+
+🔢 Change default round count in code
+
+📛 Replace "PC" with any name
+
+##  Notes
+
+
+🔄 Stats auto-reset when replaying
+
+🔠 Case-insensitive input (ROCK = rock = Rock)
+
+📁 No external dependencies needed
