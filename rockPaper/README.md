@@ -2,49 +2,53 @@
 
 A simple command-line Rock-Paper-Scissors game where you play against the computer.
 
-## Features
-- Play Rock-Paper-Scissors against the computer  
-- Customize the number of rounds  
-- Track wins/losses/ties  
-- Quit early with `"quit"`  
-- Play again option  
+## Features  
+- Play against the computer  
+- Choose custom number of rounds  
+- Track wins/losses/ties in real-time  
+- Quit early with `"quit"` command  
+- Play again without restarting  
 
-## How to Use
+## How to Use  
 1. Run `Game.py`  
-2. Enter desired number of rounds  
-3. Choose: `rock`/`paper`/`scissor`  
-4. See results instantly  
-5. Continue until rounds end or type `"quit"`  
-6. View final stats and replay  
+2. Enter desired rounds:  
+Enter how many rounds you want to play: 3
 
-## Example  
-```plaintext
-Enter how many rounds you want to play: 3  
-Enter your choice (rock, paper, scissor): rock  
-PC's choice is: scissor, Your choice is: rock  
-------------------------------  
-YOU Win! 🎉  
 
-Enter your choice (rock, paper, scissor): paper  
-PC's choice is: paper, Your choice is: paper  
-------------------------------  
-It's a tie! 🤝  
+3. Play rounds:  
+Enter choice (rock/paper/scissor): rock
+PC's choice: scissor | Your choice: rock
+YOU Win! 🎉
 
-Enter your choice (rock, paper, scissor): scissor  
-PC's choice is: rock, Your choice is: scissor  
-------------------------------  
-YOU Lose! 😢  
 
-Game over! Your result:  
-Wins: 1  Ties: 1  Losses: 1  
-Do you want to play again? (yes/no): no  
-Thanks for playing! Goodbye!..♥  
+4. Continue until rounds end or type `"quit"`  
+5. See final results:  
+Game Over!
+Wins: 2 | Ties: 0 | Losses: 1
 
-## Notes
-Emoji reactions: 🎉/😢/🤝/🤔
 
-Case-insensitive inputs
+6. Choose replay:  
+Play again? (yes/no): no
+Thanks for playing! Goodbye!..♥
 
-Stats reset when replaying
 
-Results file saved automatically
+
+## Full Example  
+Enter how many rounds: 2
+Enter choice (rock/paper/scissor): rock
+PC chose: scissor | You chose: rock
+YOU Win! 🎉
+
+Enter choice (rock/paper/scissor): quit
+You quit early. Results:
+Wins: 1 | Ties: 0 | Losses: 0
+Play again? (yes/no): no
+Goodbye!..♥
+
+
+
+## Key Notes  
+- Case-insensitive inputs (`Rock` = `ROCK` = `rock`)  
+- Stats reset automatically on replay  
+- Emoji feedback: 🎉=Win, 😢=Loss, 🤝=Tie  
+- File: `Game.py` (no installations needed)  
