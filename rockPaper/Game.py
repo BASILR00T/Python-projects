@@ -1,11 +1,11 @@
 import random
 
-def GameLogic():
+def game_logic():
     choices = ["rock", "paper", "scissor"]
     rounds = 0
-    WINS = 0
-    LOSES = 0
-    TIES = 0
+    wins = 0
+    loses = 0
+    ties = 0
 
     # Get the number of rounds from the player
     while True:
@@ -20,41 +20,53 @@ def GameLogic():
 
     while True:
         # Get player's choice
-        playerChoice = input("Enter your choice (rock, paper, scissor): ").lower()
+        player_choice = input("Enter your choice (rock, paper, scissor) or type 'quit' to exit: ").lower()
 
-        # Validate player's choice
-        if playerChoice not in choices:
+        # Check if the player wants to quit early
+        if player_choice == "quit":
+            print("You chose to quit early. Here are your results:")
+            print(f"wins: {wins}\n ties: {ties}\n loses: {loses}")
+            # Determine overall result
+            if wins > loses and wins > ties:
+                print("We Have a Winner! 🎉")
+            elif ties >= wins and ties >= loses or wins == loses:
+                print("What we call this Tie? 🤔")
+            else:
+                print("You've Lost 😢")
+
+            print("\nThanks for playing! Goodbye!..♥")
+            break
+        elif player_choice not in choices:
             print("Please enter a valid choice from the list [rock, paper, scissor].")
             continue  # Prompt the user again
 
         # Get PC's choice
-        randomChoice = random.choice(choices).lower()  # Ensure case consistency
-        print(f"PC's choice is: {randomChoice}, Your choice is: {playerChoice}")
+        random_choice = random.choice(choices).lower()  # Ensure case consistency
+        print(f"PC's choice is: {random_choice}, Your choice is: {player_choice}")
 
         # Determine the result
-        if playerChoice == randomChoice:
+        if player_choice == random_choice:
             rounds += 1
-            TIES += 1
+            ties += 1
             print("", 30 * "-", "\nIt's a tie! 🤝\n")
-        elif (playerChoice == "rock" and randomChoice == "scissor") or \
-                (playerChoice == "scissor" and randomChoice == "paper") or \
-                (playerChoice == "paper" and randomChoice == "rock"):
+        elif (player_choice == "rock" and random_choice == "scissor") or \
+                (player_choice == "scissor" and random_choice == "paper") or \
+                (player_choice == "paper" and random_choice == "rock"):
             rounds += 1
-            WINS += 1
+            wins += 1
             print(30 * "-", "\nYOU Win! 🎉\n")
         else:
             rounds += 1
-            LOSES += 1
+            loses += 1
             print(30 * "-", "\nYOU Lose! 😢\n")
 
         # Check if the selected number of rounds is completed
         if rounds == total_rounds:
-            print(f"Game over! Your result:\n Wins: {WINS}\n Ties: {TIES}\n Loses: {LOSES}")
-
+            print(f"Game over! Your result:\n wins: {wins}\n ties: {ties}\n loses: {loses}")
             # Determine overall result
-            if WINS > LOSES and WINS > TIES:
+            if wins > loses and wins > ties:
                 print("We Have a Winner! 🎉")
-            elif TIES >= WINS and TIES >= LOSES:
+            elif ties >= wins and ties >= loses or wins == loses:
                 print("What we call this Tie? 🤔")
             else:
                 print("You've Lost 😢")
@@ -69,9 +81,9 @@ def GameLogic():
             if play_again == "yes":
                 # Reset counters for a new game
                 rounds = 0
-                WINS = 0
-                LOSES = 0
-                TIES = 0
+                wins = 0
+                loses = 0
+                ties = 0
 
                 # Get the number of rounds for the new game
                 while True:
@@ -89,4 +101,4 @@ def GameLogic():
 
 
 # Start the game
-GameLogic()
+game_logic()
