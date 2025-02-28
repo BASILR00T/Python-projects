@@ -114,20 +114,3 @@ git push origin feature/new-feature
 4. Open a pull request  
 
 ---
-
-## License 📄
-Distributed under the MIT License. See [LICENSE](LICENSE) for details.
-
----
-
-**Built with Python passion!** 🐍  
-``` 
-This version includes:  
-1. GitHub-specific badges  
-2. Clear installation instructions  
-3. Visual hierarchy with emojis  
-4. Contribution guidelines  
-5. Placeholder for screenshots  
-6. Clean markdown formatting  
-
-Just add a screenshot (optional) and replace `your-username` in the clone URL!
