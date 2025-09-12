@@ -45,7 +45,7 @@ Play infinitely without restarting
 
 1. **Clone the repository**  
 ```bash
-git clone https://github.com/your-username/number-guessing-game.git
+git clone https://github.com/GreatBSA/number-guessing-game.git
 cd number-guessing-game
 ```
 
@@ -114,3 +114,4 @@ git push origin feature/new-feature
 4. Open a pull request  
 
 ---
+
