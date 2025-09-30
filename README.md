@@ -4,7 +4,7 @@ A collection of Python projects by **BASILR00T**. More exciting projects coming 
 
 ## About
 
-This repository is a growing showcase of Python projects by **BASIL-Tech**, featuring scripts, tools, and applications. From simple automation to creative solutions, check back for updates as we add more! 🚀
+This repository is a growing showcase of Python projects by **BASILR00T**, featuring scripts, tools, and applications. From simple automation to creative solutions, check back for updates as we add more! 🚀
 
 ## Contact
 
