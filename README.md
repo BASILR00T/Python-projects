@@ -1,6 +1,6 @@
 # Python Projects 🐍
 
-A collection of Python projects by **BASIL-Tech**. More exciting projects coming soon!
+A collection of Python projects by **BASILR00T**. More exciting projects coming soon!
 
 ## About
 
@@ -8,4 +8,4 @@ This repository is a growing showcase of Python projects by **BASIL-Tech**, feat
 
 ## Contact
 
-* **GitHub**: [GreatBSA](https://github.com/GreatBSA) 🌟
+* **GitHub**: [BASILR00T](https://github.com/BASILR00T) 🌟
